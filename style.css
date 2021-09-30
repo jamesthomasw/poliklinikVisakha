@@ -1,0 +1,212 @@
+.container {
+    width: 100vw;
+    height: 100vh;
+    background-color: #00abefb4;
+    position: relative;
+}
+
+.top-nav {
+    min-height: 90px;
+    width: 100%;
+    position: relative;
+    background-color: #ffffff;
+}
+
+.top-nav .logoVisakha {
+    padding: 18px 4px 18px 24px;
+    width: 55px;
+}
+
+.top-nav .tulisanVisakha {
+    padding: 6px;
+    height: 75px;
+}
+
+.top-nav button {
+    position: absolute;
+    top: 50%;
+    left: 92%;
+    transform: translate(-50%, -50%);
+    padding: 18px 40px 18px 20px;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 700;
+    font-size: 1.2em;
+    cursor: pointer;
+    background-color: white;
+    border: 1px solid rgba(0, 0, 0, 0.6);
+    border-radius: 6px;
+}
+
+.menu-nav {
+    position: absolute;
+    top: 138%;
+    left: 91.7%;
+    transform: translate(-50%, -50%);
+    width: 175px;
+    z-index: 99;
+    display: none;
+}
+
+.menu-nav a {
+    display: flex;
+    text-decoration: none;
+    color: black;
+    background-color: white;
+    width: 85%;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 700;
+    font-size: 1.1em;
+    padding: 16px;
+    border: 1px solid rgba(0, 0, 0, 0.4);
+}
+
+.arrowIcon {
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: 34%;
+    left: 83.5%;
+}
+
+.patient-card {
+    width: 900px;
+    height: 80%;
+    background-color: white;
+    position: absolute;
+    top: 56%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    border-radius: 3%;
+}
+
+.patient-card h2 {
+    font-family: 'Nunito', sans-serif;
+    font-weight: 700;
+    font-size: 1.8em;
+    text-align: center;
+    margin: 0 5%;
+    padding: 20px 0px 15px 0px;
+    width: 90%;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.233);
+}
+
+.dataPasien {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+    height: 70%;
+    overflow: auto;
+}
+
+.patient-card .dataPasien label {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 1.05em;
+}
+
+.rowForm {
+    width: 100%;
+}
+
+#namaPasien {
+    width: 60%;
+    padding: 0.8%;
+    margin-left: 20%;
+}
+
+#umurPasien {
+    width: 5%;
+    padding: 0.8%;
+    margin-left: 20.2%;
+}
+
+#jenisKelamin {
+    width: 20%;
+    padding: 0.8%;
+    margin-left: 19.8%;
+}
+
+#alamatPasien {
+    width: 60%;
+    padding: 0.8%;
+    margin-left: 25.8%;
+}
+
+#keluhanPasien {
+    width: 60%;
+    padding: 0.8%;
+    margin-left: 24.6%;
+}
+
+#tindakan {
+    width: 60%;
+    padding: 0.8%;
+    margin-left: 23.7%;
+}
+
+#tglDatang {
+    width: 60%;
+    padding: 0.8%;
+    margin-left: 22.2%;
+}
+
+#tglKembali {
+    width: 60%;
+    padding: 0.8%;
+    margin-left: 21.3%;
+}
+
+.obatPasien {
+    width: 60%;
+    padding: 0.8%;
+    margin-left: 10.8%;
+}
+
+#keteranganPasien {
+    width: 60%;
+    padding: 0.8%;
+    margin-left: 21.4%;
+}
+
+#submitDataPasien {
+    padding: 12px 48px;
+    position: absolute;
+    top: 92%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #86c539;
+    border: none;
+    border-radius: 6px;
+    color: white;
+    font-family: 'Orelega One', cursive;
+    font-size: 1.2em;
+    cursor: pointer;
+}
+
+#submitDataPasien:hover {
+    background-color: #60882e;
+}
+
+.jumlahObat {
+    width: 5%;
+    padding: 0.8%;
+    margin-left: 16.4%;
+}
+
+#obatPasien-2, #obatPasien-3 {
+    margin-left: 10.8%;
+}
+
+#jumlahObat-2, #jumlahObat-3 {
+    margin-left: 16.4%;
+}
+
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button {  
+
+   opacity: 1;
+
+}

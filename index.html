@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="img/logo-visakha.jpg">
+    <link rel="stylesheet" href="css-reset.css">
+    <link rel="stylesheet" href="style.css">
+    <title>VISAKHA - Klinik & Therapy</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Cantarell:wght@400;700&family=Commissioner&family=Lato:wght@100;300;400;700;900&family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Nunito:wght@200;300;400;600;700;800;900&family=Open+Sans:wght@300;400;600;700;800&family=Orelega+One&family=Quicksand&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header class="top-nav">
+            <img src="img/logo-visakha.jpg" class="logoVisakha" alt="">
+            <img src="img/tulisan-visakha.jpg" class="tulisanVisakha" alt="">
+            <button id="toggleButton">KLINIK UMUM <img class="arrowIcon" src="img/down-filled-triangular-arrow.svg" alt=""></button>
+
+            <div id="menuButton" class="menu-nav">
+                <a href="therapy.html">THERAPY</a>
+                <a href="klinik-gigi.html">KLINIK GIGI</a>
+            </div>
+
+        </header>
+
+        <div class="patient-card">
+            <h2>INPUT DATA PASIEN - KLINIK UMUM</h2>
+        
+            <form id="dataForm" action="https://docs.google.com/forms/u/0/d/e/1FAIpQLScLd1LmG8jyc4ahmEmKPXZSHWy7fIJRatjUHILzyWb70KV9-Q/formResponse" target="_blank">
+                <div class="dataPasien">
+
+                    <div class="rowForm">
+                        <label for="namaPasien">Nama Pasien :</label>
+                        <input name="entry.967064668" id="namaPasien" type="text" required autocomplete="false"><br><br>
+                    </div>
+
+                    <div class="rowForm">
+                        <label for="umurPasien">Umur Pasien :</label>
+                        <input name="entry.690222960" min="1" id="umurPasien" type="number" autocomplete="false"><br><br>
+                    </div>
+
+                    <div class="rowForm">
+                        <label for="jenisKelamin">Jenis Kelamin :</label>
+                        <select name="entry.1204083735" id="jenisKelamin">
+                            <option value="">--pilih salah satu--</option>
+                            <option value="Laki-laki">Laki-laki</option>
+                            <option value="Perempuan">Perempuan</option>
+                        </select><br><br>
+                    </div>
+
+                    <div class="rowForm">
+                        <label for="alamatPasien">Alamat :</label>
+                        <input name="entry.2119108216" id="alamatPasien" type="text" autocomplete="false"><br><br>
+                    </div>
+
+                    <div class="rowForm">
+                        <label for="keluhanPasien">Keluhan :</label>
+                        <input name="entry.1222659060" id="keluhanPasien" type="text" autocomplete="false"><br><br>
+                    </div>
+
+                    <div class="rowForm">
+                        <label for="obatPasien-1">Obat yang diambil - (1) :</label>
+                        <input type="text" name="entry.160382903" id="obatPasien-1" class="obatPasien" autocomplete="false"><br><br>
+                    </div>
+
+                    <div class="rowForm">
+                        <label for="jumlahObat-1">Jumlah Obat - (1) :</label>
+                        <input name="entry.2143663238" min="1" id="jumlahObat-1" class="jumlahObat" type="number"><br><br>
+                    </div>
+
+                    <div class="rowForm">
+                        <label for="obatPasien-2">Obat yang diambil - (2) :</label>
+                        <input type="text" name="entry.604760865" id="obatPasien-2" class="obatPasien" autocomplete="false"><br><br>
+                    </div>
+
+                    <div class="rowForm">
+                        <label for="jumlahObat-2">Jumlah Obat - (2) :</label>
+                        <input name="entry.1665833721" min="1" id="jumlahObat-2" class="jumlahObat" type="number"><br><br>
+                    </div>
+
+                    <div class="rowForm">
+                        <label for="obatPasien-3">Obat yang diambil - (3) :</label>
+                        <input type="text" name="entry.627348666" id="obatPasien-3" class="obatPasien" autocomplete="false"><br><br>
+                    </div>
+
+                    <div class="rowForm">
+                        <label for="jumlahObat-3">Jumlah Obat - (3) :</label>
+                        <input name="entry.674930624" min="1" id="jumlahObat-3" class="jumlahObat" type="number"><br><br>
+                    </div>
+
+                    <div class="rowForm">
+                        <label for="keterangan">Keterangan :</label>
+                        <input type="text" name="entry.1438052981" id="keteranganPasien" autocomplete="false"></input>
+                    </div>
+
+                </div>
+                <button type="submit" id="submitDataPasien" onclick="submitForm()">Submit</button>
+            </form>
+        
+        </div>
+        </div>
+        </body>
+        <script src="jquery-3.6.0.min.js"></script>
+        <script>
+            function submitForm() {
+                var frm = document.getElementById("dataForm");
+                frm.submit();
+                frm.reset();
+                return false;
+            }
+
+            $("#toggleButton").click(function() {
+                $("#menuButton").toggle();
+            })
+
+        </script>
+</html>

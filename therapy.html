@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="img/logo-visakha.jpg">
+    <link rel="stylesheet" href="css-reset.css">
+    <link rel="stylesheet" href="style.css">
+    <title>VISAKHA - Klinik & Therapy</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Cantarell:wght@400;700&family=Commissioner&family=Lato:wght@100;300;400;700;900&family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Nunito:wght@200;300;400;600;700;800;900&family=Open+Sans:wght@300;400;600;700;800&family=Orelega+One&family=Quicksand&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header class="top-nav">
+            <img src="img/logo-visakha.jpg" class="logoVisakha" alt="">
+            <img src="img/tulisan-visakha.jpg" class="tulisanVisakha" alt="">
+            <button id="toggleButton" style="width: 190px;">THERAPY <img class="arrowIcon" src="img/down-filled-triangular-arrow.svg" style="left: 78%;" alt=""></button>
+
+            <div id="menuButton" class="menu-nav">
+                <a href="index.html">KLINIK UMUM</a>
+                <a href="klinik-gigi.html">KLINIK GIGI</a>
+            </div>
+
+        </header>
+
+        <div class="patient-card">
+            <h2>INPUT DATA PASIEN - THERAPY</h2>
+        
+            <form id="therapyForm" action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSdvESkmFast-kLFVZ8sx0-_Y2zjhuqXtAStIxaE9gb8fLOReA/formResponse" target="_blank">
+                <div class="dataPasien">
+
+                    <div class="rowForm">
+                        <label for="namaPasien">Nama Pasien :</label>
+                        <input name="entry.2089673394" id="namaPasien" type="text" required autocomplete="false"><br><br>
+                    </div>
+
+                    <div class="rowForm">
+                        <label for="umurPasien">Umur Pasien :</label>
+                        <input name="entry.1728298799" min="1" id="umurPasien" type="number" autocomplete="false"><br><br>
+                    </div>
+
+                    <div class="rowForm">
+                        <label for="jenisKelamin">Jenis Kelamin :</label>
+                        <select name="entry.99719728" id="jenisKelamin">
+                            <option value="">--pilih salah satu--</option>
+                            <option value="Laki-laki">Laki-laki</option>
+                            <option value="Perempuan">Perempuan</option>
+                        </select><br><br>
+                    </div>
+
+                    <div class="rowForm">
+                        <label for="alamatPasien">Alamat :</label>
+                        <input name="entry.957470004" id="alamatPasien" type="text" autocomplete="false"><br><br>
+                    </div>
+
+                    <div class="rowForm">
+                        <label for="keluhanPasien">Keluhan :</label>
+                        <input name="entry.273453774" id="keluhanPasien" type="text" autocomplete="false"><br><br>
+                    </div>
+
+                    <div class="rowForm">
+                        <label for="tglDatang">Tgl Datang :</label>
+                        <input name="entry.157997672" id="tglDatang" type="date" autocomplete="false"><br><br>
+                    </div>
+
+                    <div class="rowForm">
+                        <label for="tglKembali">Tgl Kembali :</label>
+                        <input name="entry.1096792898" id="tglKembali" type="date" autocomplete="false"><br><br>
+                    </div>
+
+                    <div class="rowForm">
+                        <label for="keterangan">Keterangan :</label>
+                        <input type="text" name="entry.1485432783" id="keteranganPasien" autocomplete="false"></input>
+                    </div>
+
+                </div>
+                <button type="submit" id="submitDataPasien" onclick="submitForm()">Submit</button>
+            </form>
+        
+        </div>
+        </div>
+        </body>
+        <script src="jquery-3.6.0.min.js"></script>
+        <script>
+            function submitForm() {
+                var form = document.getElementById("therapyForm");
+                form.submit();
+                form.reset();
+                return false;
+            }
+
+            $("#toggleButton").click(function() {
+                $("#menuButton").toggle();
+            })
+
+        </script>
+</html>
